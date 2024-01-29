@@ -1,0 +1,36 @@
+// ===================================HEADER===============================
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: .5s auto;
+
+    .brand__logo {
+
+        img{
+            width: 100px;
+        }
+    }
+
+
+    .nav__menu {
+    }
+
+    .nav__list {
+
+        }
+
+        .nav__link {
+            color: #101A24;
+            font-family: var(--secondary-font);
+            font-size: var(--normal-font-size);
+            font-weight: 400;
+        }
+
+
+}
+
+

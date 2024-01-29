@@ -1,0 +1,71 @@
+// ======================================== BASE ================================
+* ,::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0 ;
+    font-family: var(--primary-font);
+}
+
+h1,h2,h3 {
+    font-weight: var(--font-semi-bold);
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 1em 2em;
+    color: var(--white-color);
+    border-radius: 10px 0 10px 0;
+    border: none;
+    color: #FFF;
+    font-family: var(--primary-font);
+    font-size: var(--normal-font-size);
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+
+// ==============================REUSEABLE CONTENT ====================================
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.btn-primary{
+    background: var(--first-color);
+}
+
+.btn-secondary{
+    background: var(--dark-color);
+}

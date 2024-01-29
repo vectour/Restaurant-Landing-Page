@@ -27,39 +27,28 @@ a {
     text-decoration: none;
 }
 
-button {
-    padding: 1em 2em;
-    color: var(--white-color);
-    border-radius: 10px 0 10px 0;
-    border: none;
-    color: #FFF;
-    font-family: var(--primary-font);
-    font-size: var(--normal-font-size);
-    font-style: normal;
-    font-weight: 500;
-}
-
-
 
 
 // ==============================REUSEABLE CONTENT ====================================
 
-.flex-column
+.flex
 {
     display: flex;
-    flex-direction: column;
-}
 
-.flex-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    &-column{
+        flex-direction: column;
+    }
 
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
+    &-row {
+        flex-direction: row;
+
+        &-center {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    }
+    
 }
 
 .btn-primary{

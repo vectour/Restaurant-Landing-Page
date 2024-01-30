@@ -44,6 +44,20 @@
     .change-theme {
         position: initial;
     }
+
+    .special__dishes {
+
+        .section{
+
+            .dish {
+                flex-direction: row;
+                flex: 1 0 40%;
+            }
+
+        }
+        
+        
+    }
 }
 
 // For large devices
@@ -58,6 +72,17 @@
 
         .btn__header{
             display: block;
+        }
+    }
+
+    .special__dishes {
+
+        .section{
+
+            .dish {
+                flex-basis: 20%;
+                
+            }
         }
     }
     

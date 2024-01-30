@@ -10,6 +10,7 @@
   --secondary-color: #101A24;
   --light-dark: #5C6574;
   --white-color: #ffffff;
+  --dark-color: #000000;
   --shadow: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
   /*========== Font and typography ==========*/
   --primary-font: "Montserrat", sans-serif;
@@ -37,7 +38,7 @@
   :root {
     --biggest-font-size: 3.25rem;
     --h2-font-size: 2.75rem;
-    --h3-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
   }
@@ -239,6 +240,10 @@ a {
   .change-theme {
     position: initial;
   }
+  .special__dishes .section .dish {
+    flex-direction: row;
+    flex: 1 0 40%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -246,6 +251,9 @@ a {
   }
   .nav .btn__header {
     display: block;
+  }
+  .special__dishes .section .dish {
+    flex-basis: 20%;
   }
 }
 body.dark-theme {
@@ -356,4 +364,65 @@ body.dark-theme {
   width: 50%;
   bottom: 0;
   left: -50px;
+}
+
+.special__dishes {
+  background: #e6eaef;
+}
+.special__dishes .section .special__dishes__text {
+  margin-bottom: 10em;
+  text-align: center;
+}
+.special__dishes .section .special__dishes__text h1 {
+  font-size: var(--biggest-font-size);
+}
+.special__dishes .section .special__dishes__text p {
+  margin: 0 auto;
+  max-width: 256px;
+  font-size: var(--normal-font-size);
+}
+.special__dishes .section .dish {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.special__dishes .section .dish__item {
+  text-align: center;
+  padding: 8em 1.5em 3.125em;
+  width: 265px;
+  border-radius: 40px 10px 40px 10px;
+  border: 1px solid var(--white-color);
+  position: relative;
+  margin-bottom: 8em;
+}
+.special__dishes .section .dish__item h3 {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.25em;
+}
+.special__dishes .section .dish__item p {
+  font-size: var(--normal-font-size);
+}
+.special__dishes .section .dish__item__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -40%;
+}
+.special__dishes .section .dish__item__img .dish__price {
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: var(--dark-color);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
 }/*# sourceMappingURL=styles.css.map */

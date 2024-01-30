@@ -12,11 +12,13 @@ html{
 body {
     margin: var(--header-height) 0 0 0 ;
     font-family: var(--primary-font);
+    padding: 0 auto;
 }
 
 h1,h2,h3 {
     font-weight: var(--font-semi-bold);
     color: var(--dark-color);
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul {

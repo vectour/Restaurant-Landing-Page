@@ -1,4 +1,7 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 3em 0;
+}
 .section__title, .section__title-center {
   font-size: var(--h2-font-size);
   color: var(--title-color);
@@ -19,9 +22,9 @@
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 1024px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {

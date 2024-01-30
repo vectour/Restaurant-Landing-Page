@@ -5,9 +5,18 @@
         padding: 3.5rem 0 1rem;
     }
 
+    .change-theme{
+        position: absolute;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    
 }
 
 
+// For medium devices
 @media screen and (min-width: 768px) {
 
     body {
@@ -23,14 +32,13 @@
 
         &__list {
             flex-direction: row;
+            align-items: center;
             column-gap: 2.5rem;
         }
 
         &__toggle {
             display: none;
         }
-
-
     }
 
     .change-theme {
@@ -40,6 +48,18 @@
 
 // For large devices
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 1024px) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    .nav {
+
+        .btn__header{
+            display: block;
+        }
+    }
     
 }
+

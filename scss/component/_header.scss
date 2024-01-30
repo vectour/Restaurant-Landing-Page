@@ -7,6 +7,7 @@
     left: 0;
     z-index: var(--z-fixed);
     transition: .5s auto;
+    margin: 1em auto;
 
     .brand__logo {
 
@@ -39,7 +40,6 @@
             z-index: var(--z-fixed);
             transition: .4s;
         }
-
     }
 
     &__list {

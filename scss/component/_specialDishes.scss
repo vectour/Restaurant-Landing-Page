@@ -33,7 +33,6 @@
             // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
 
             &__item {
                 text-align: center;
@@ -42,7 +41,9 @@
                 border-radius: 40px 10px 40px 10px;
                 border: 1px solid var(--white-color);
                 position: relative;
-                margin-bottom: 8em;
+                left: 0;
+                right: 0;
+                margin: 0 auto 8em;
 
                 h3{
                     font-size: var(--h3-font-size);
@@ -76,7 +77,83 @@
                     }
                 }
 
+                &:hover {
+                    background: var(--white-color);
+                }
+
             }
+        }
+    }
+
+
+
+    // ============= WELCOME PART =================
+
+    &__welcome {
+
+        &__detail {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+            margin: 0 auto;
+
+            p {
+                width: 80%;
+                margin-bottom: 2em;
+            }
+
+            .welcome__btn {
+                display: flex;
+                column-gap: 1em;
+            }
+        }
+
+        &__img {
+
+            .img{
+                width: 90%;
+                position: relative;
+
+                .main-img {
+                    width: 100%;
+                }
+
+                .leaf_1,
+                .leaf_2,
+                .leaf_3,
+                .leaf_4 {
+                    position: absolute;
+                    z-index: 5;
+                    width: 30%;
+
+                }
+
+                .leaf_1 {
+                    top: 5rem;
+                    left: 0;
+                    width: 15%;
+
+                }
+
+                .leaf_2 {
+                    bottom: 1rem;
+                    left: 2rem;
+                }
+
+                .leaf_3 {
+                    right: -1rem;
+                    top: 2.5rem;
+                }
+
+                .leaf_4 {
+                    bottom: 2.5rem;
+                    right: 6rem;
+                    width: 15%;
+
+                }
+            }
+
+
         }
     }
 }

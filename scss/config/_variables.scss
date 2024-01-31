@@ -20,8 +20,8 @@
     /*========== Font and typography ==========*/
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Inter', sans-serif;
-    --biggest-font-size: 2rem;
-    --h2-font-size: 1.5rem;
+    --biggest-font-size: 2.5rem;
+    --h2-font-size: 2.125rem;
     --h3-font-size: 1rem;
     --normal-font-size: .875rem;
     --small-font-size: .75rem;
@@ -29,7 +29,7 @@
     // Responsive typography
     @media screen and (min-width: 968px){
         --biggest-font-size: 3.25rem;
-        --h2-font-size: 2.75rem;
+        --h2-font-size: 3rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
         --small-font-size: .875rem;

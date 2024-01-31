@@ -527,6 +527,7 @@ a {
 
 .footer {
   position: relative;
+  padding-top: 6em;
 }
 .footer .newsletter {
   position: absolute;
@@ -589,7 +590,7 @@ a {
   row-gap: 2em;
 }
 .footer__menu__about img {
-  width: 50%;
+  width: 40%;
 }
 .footer__menu__about__time .category__container {
   display: flex;
@@ -602,7 +603,8 @@ a {
 .footer__menu__nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  -moz-column-gap: 3em;
+       column-gap: 3em;
 }
 .footer__menu__socials {
   display: flex;
@@ -651,9 +653,11 @@ body.dark-theme {
 }
 .testimonials .section .details h2 {
   font-size: 1.75em;
+  margin-bottom: 1em;
 }
 .testimonials .section .details p {
   max-width: 300px;
+  margin: 0 auto;
 }
 .testimonials .section .testimonial__container .testimonial__detail {
   position: relative;
@@ -669,9 +673,9 @@ body.dark-theme {
 }
 .testimonials .section .testimonial__container .testimonial__detail .testimonial__img {
   position: absolute;
-  right: 50%;
-  margin: 0 auto;
   top: -50px;
+  left: 0;
+  right: 0;
 }
 .testimonials .section .testimonial__container .testimonial__detail .testimonial__img img {
   border-radius: 50%;

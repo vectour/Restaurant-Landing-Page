@@ -14,10 +14,12 @@
             
             h2 {
                 font-size: 1.75em;
+                margin-bottom: 1em;
             }
 
             p {
                 max-width: 300px;
+                margin: 0 auto;
             }
         }
 
@@ -37,9 +39,11 @@
 
                 .testimonial__img {
                     position: absolute;
-                    right: 50%;
-                    margin: 0 auto;
                     top: -50px;
+                    left: 0;
+                    right: 0;
+                    
+
 
                     img {
                         border-radius: 50%;

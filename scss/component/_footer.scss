@@ -2,6 +2,7 @@
 
 .footer {
     position: relative;
+    padding-top: 6em;
 
     .newsletter {
         position: absolute;
@@ -73,7 +74,7 @@
             row-gap: 2em;
 
             img{
-                width: 50%;
+                width: 40%;
             }
 
             &__time {
@@ -93,7 +94,8 @@
         &__nav {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            column-gap: 3em;
+        
         }
 
         &__socials {
